@@ -9,8 +9,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.vinson_chen.week5_app.MainActivity">
 
-    <TextView
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button_sp"></FrameLayout>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="SharedP"
+        android:id="@+id/button_sp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INTERNALS"
+        android:id="@+id/button_is"
+        android:layout_alignBottom="@+id/button_sp"
+        android:layout_toEndOf="@+id/button_sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQL"
+        android:id="@+id/button_sql"
+        android:layout_alignBottom="@+id/button_is"
+        android:layout_toEndOf="@+id/button_is" />
 </RelativeLayout>
