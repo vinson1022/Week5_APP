@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Week5_APP</string>
+    <string name="data_sp_name">SP_NAME</string>
+    <string name="data_sp_phone">SP_PHONE</string>
 </resources>

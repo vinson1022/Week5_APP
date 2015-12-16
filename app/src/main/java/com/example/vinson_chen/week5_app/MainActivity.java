@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setView();
         setListener();
 
+        Fragment_SharedPreferences fragment = new Fragment_SharedPreferences();
+        getFragmentManager().beginTransaction().replace(R.id.fragment_content, fragment).commit();
+
     }
 
     private void setListener() {
@@ -39,7 +42,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Log.d("Vinson","");
         if(v.getId() == button_fragment_sp.getId()){
             Fragment_SharedPreferences fragment = new Fragment_SharedPreferences();
             getFragmentManager().beginTransaction().replace(R.id.fragment_content, fragment).commit();
